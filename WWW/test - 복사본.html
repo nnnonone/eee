@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+<style>
+    *{ list-style: none; padding: 0; box-sizing: border-box;}
+    
+    .container { width: 1000px; margin: 0 auto;   }
+    .row {  padding: 0 0px ; background: pink}
+    #header {; position: relative; background:  red;}    
+    .header { }
+    .header h1 {    }
+    .header nav { background: orange; width: 100%; border-bottom: 3px solid #333; }
+    .header nav .mainmenu { background: green;  display: flex; justify-content: center; } 
+    .header nav .mainmenu li {  background: lightgreen;  padding: 10px; border: 1px solid #fff;}
+    .header nav .submenu { background: purple;  position: absolute; left: 0; top:100%; width: 100%; }
+/*    .submenu>.container>.row>.le { background: orange; display: flex; padding: 10px;}*/
+    .le  { display: flex;}
+</style>
+</head>
+
+<body>
+
+        <div class="container">
+            <div class="row">
+    <div id="header">
+               
+                <div class="header">
+                    <h1>LOGO</h1>
+                    
+                    <nav>
+                        <ul class="mainmenu">
+                            <li>메뉴1coffee
+                                <ul class="submenu">
+<!--
+        <div class="container">
+            <div class="row"> 
+-->
+                         <div class="le">                             
+                                    <li>11111</li>
+                                    <li>111222</li>
+                                    <li>111333</li>
+                         </div>
+<!--
+            </div>
+        </div>                        
+-->
+                                </ul>
+                            </li>
+                            <li>메뉴2</li>
+                            <li>메뉴3</li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
