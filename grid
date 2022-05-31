@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <title> 반응형1 </title>
+       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS-->
+    <link href="css/reset.css" rel="stylesheet"/>    
+    <link href="css/responsive1.css" rel="stylesheet"/>    
+    <link   rel="stylesheet"   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+       
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Swiper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--Slick-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--JS-->
+    <script src="js/responsive1.js"></script>
+                
+    <style>
+.container { 
+            position: relative;
+            max-width: 1480px;  
+            padding: 0 20px; 
+            margin: 0 auto;
+        }
+.btn { 
+    display: inline-block; 
+    color: #fff;
+    padding:15px 15px;  
+    background: transparent;
+    transition: 0.3s;
+/*    background: #004fff; */
+    cursor: pointer;
+}        
+.more-btn {  
+    margin-top: 20px;
+    font-size: 15px;  
+    width: 145px;
+    line-height: 10px;
+    border: 1px solid #fff;
+/*    box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.1) ;*/
+    transition: 0.4s; 
+}
+.more-btn:hover { color: #004986; background: #fff; }        
+/*------------notice------------------*/
+
+.notice { 
+    padding: 100px 0;
+    width: 100%;height: 100%;
+    background: #eee
+}
+
+.text-box { position: relative;}
+.notice h2 {color: #222;}
+.notice h3 {color: #222}
+.notice button {
+    color: #222; border: 1px solid #222;
+    top: 0; right:10px;
+    position: absolute;  
+}
+.notice button:hover {
+    background: #222; color: #fff;
+}
+.news {
+    padding: 40px 0
+}
+.news ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+}
+.news ul li {
+    height: 300px;
+    margin: 10px 4px;
+    padding: 20px 20px 60px 20px;
+    box-shadow: 5px 8px 14px #eee;
+    background: #fff;
+    
+}
+
+
+
+
+.news .news-text {
+    padding: 10px;
+}
+
+.news .news-text h3 {  font-size: 20px; color: blue;   }
+.news .news-text p { overflow: hidden; max-height: 50px;}
+
+@media screen and (max-width: 680px ){
+    .notice .text-box { margin-bottom: 80px;}
+    .notice button {
+        top: 100%; left: 0; 
+    }
+    .news {padding:  0px}
+    .news-text h3{  background: red;;  }
+    .news-text p{ display: none; }
+    .news ul li  {
+        margin: 10 auto !important;
+    }
+    .news ul li a img { 
+        width: auto;
+        height: auto;
+    }
+
+}
+    </style>
+    
+    </head>
+    <body>       
+        <section>
+                <div class="notice">
+           <div class="container">
+                       <div class="text-box">
+                            <h2>POSCO Newsroom</h2>
+                            <h3># 포스코그룹의 소식을 전합니다</h3>
+                            <button class="btn more-btn">자세히 보기</button>
+                       </div>               
+                  
+                <div class="news">
+                    <ul>
+                        <li><a href="#">
+                                <img src="https://picsum.photos/id/237/200/200" alt="new32">
+                                <div class="news-text">
+                                    <h3>제목입니다.</h3>
+                                    <p>
+                                    내용내용냉뇽낸용내용내용내용냉ㄴ욘애ㅛㄴ애ㅛ내욘애ㅛ냉내ㅛ앤요냉랜ㅇ료내
+                                    내용내용냉뇽낸용내용내용내용냉ㄴ욘애ㅛㄴ애ㅛ내욘애ㅛ냉내ㅛ앤요냉랜ㅇ료내
+                                    내용내용냉뇽낸용내용내용내용냉ㄴ욘애ㅛㄴ애ㅛ내욘애ㅛ냉내ㅛ앤요냉랜ㅇ료내
+                                    내용내용냉뇽낸용내용내용내용냉ㄴ욘애ㅛㄴ애ㅛ내욘애ㅛ냉내ㅛ앤요냉랜ㅇ료내
+                                    </p>
+                                </div>
+                        </a></li>
+                        <li><a href="#"><img src="https://picsum.photos/id/71/200/200" alt="new32"></a></li>
+                        <li><a href="#"><img src="https://picsum.photos/id/223/200/200" alt="new32"></a></li>
+                        <li><a href="#"><img src="https://picsum.photos/id/44/200/200" alt="new32"></a></li>
+                        <li><a href="#"><img src="https://picsum.photos/id/327/200/200" alt="new32"></a></li>
+                        <li><a href="#"><img src="https://picsum.photos/id/290/200/200" alt="new32"></a></li>
+                        <li><a href="#"><img src="https://picsum.photos/id/565/200/200" alt="new32"></a></li>
+                        <li><a href="#"><img src="https://picsum.photos/id/289/200/200" alt="new32"></a></li>
+
+                    </ul>
+                </div>
+                
+                </div>
+           </div>
+        </section>
+    </body>
+</html>
+            
